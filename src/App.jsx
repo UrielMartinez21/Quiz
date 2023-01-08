@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Bienvenida from './components/Bienvenida'
-import Ejercicios from './components/Ejercicios'
+import Cuestionario from './components/Cuestionario'
 
 const App = () => {
   const [comenzar, setComenzar] = useState(false)
@@ -8,9 +8,10 @@ const App = () => {
 //----------------------| Valor que regresara |----------------------
   return (
     <>
-      {comenzar ?
-        <Ejercicios setComenzar={setComenzar} /> :
+      {!comenzar ?
         <Bienvenida setComenzar={setComenzar} />
+        :
+        <Cuestionario setComenzar={setComenzar} />
       }
     </>
   )

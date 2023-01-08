@@ -1,9 +1,12 @@
 import React from 'react'
+import Pregunta from './Pregunta'
 
 const Preguntas = () => {
   return (
     <div>
-      Pregunta 1
+      <Pregunta/>
+      <Pregunta/>
+      <Pregunta/>
     </div>
   )
 }
