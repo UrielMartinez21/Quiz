@@ -7,7 +7,7 @@ const Cuestionario = ({setComenzar}) => {
     <>
       <BarraPrincipal setComenzar={setComenzar} />
       <div>
-        <Preguntas/>
+        <Preguntas />
       </div>
     </>
   )
