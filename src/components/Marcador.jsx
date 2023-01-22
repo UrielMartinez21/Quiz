@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Marcador = ({ className }) => {
+const Marcador = ({ className, contador }) => {
   return (
     <div className={className}>
-      El marcador es: 0
+      El marcador es: {contador}
     </div>
   )
 }

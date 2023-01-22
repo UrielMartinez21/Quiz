@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BarraPrincipal from './BarraPrincipal'
 import Preguntas from './Cuestionario/Preguntas'
 
-const Cuestionario = ({setComenzar}) => {
+//---> Componente principal de preguntas
+const Cuestionario = ({ setComenzar }) => {
+  const [contador, setContador] = useState(0)
+//--------------------| Valor que regresara |--------------------
   return (
     <>
-      <BarraPrincipal setComenzar={setComenzar} />
+      <BarraPrincipal setComenzar={setComenzar} contador={contador} />
       <div>
-        <Preguntas />
+        <Preguntas setContador={setContador} contador={contador} />
       </div>
     </>
   )

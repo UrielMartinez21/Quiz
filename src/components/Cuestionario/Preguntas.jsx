@@ -2,8 +2,10 @@ import React from 'react'
 import Pregunta from './Pregunta'
 import { cuestionario } from '../../data/cuestionario'
 
-const Preguntas = () => {
-  const preguntasCuestionario = cuestionario
+const Preguntas = ({ setContador, contador }) => {
+  const preguntasCuestionario = cuestionario      // Importan preguntas
+
+//--------------------| Valor que regresara |--------------------
   return (
     <div>
       {preguntasCuestionario.map((pregunta) => ( 
@@ -12,6 +14,8 @@ const Preguntas = () => {
           pregunta={pregunta.pregunta}
           opciones={pregunta.opciones}
           respuesta={pregunta.respuesta}
+          setContador={setContador}
+          contador={contador}
         />
       ))}
     </div>
