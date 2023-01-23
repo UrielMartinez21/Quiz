@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Bienvenida from './components/Bienvenida'
-import Cuestionario from './components/Cuestionario'
+import Cuestionario from './components/Cuestionario/Cuestionario'
 
 const App = () => {
   const [comenzar, setComenzar] = useState(false)

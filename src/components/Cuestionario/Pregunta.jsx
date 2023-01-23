@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 const Pregunta = ({ pregunta, opciones, respuesta, setContador, contador }) => {
   const [valor, setValor] = useState(null)        // Comparara con la respuesta correcta
   const [termino, setTermino] = useState(false)   // Deshabilita botones y muestra opcion correcta
-  const [mensaje, setMensaje] = useState("")
+  const [mensaje, setMensaje] = useState("")      // Mensaje si fallo o no
 
   //---> Verifica si la respuesta es correcta
   useEffect(() => {
@@ -22,10 +22,10 @@ const Pregunta = ({ pregunta, opciones, respuesta, setContador, contador }) => {
 
 //--------------------| Valor que regresara |--------------------
   return (
-    <div className='border-dashed border-2 border-red-700'>
+    <div className='border-dashed border-2 border-red-700 my-8'>
       <div>{pregunta}</div>
       <div className='grid grid-cols-2 gap-4 place-content-center'>
-        <button onClick={() => setValor(opciones[0])} disabled={termino} className={termino?"bg-red-500":"bg-green-500"} >
+        <button onClick={() => setValor(opciones[0])} disabled={termino} >
           Opcion a: {opciones[0]}
         </button>
         <button onClick={() => setValor(opciones[1])} disabled={termino} >

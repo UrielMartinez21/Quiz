@@ -3,7 +3,7 @@ import React from 'react'
 const Marcador = ({ className, contador }) => {
   return (
     <div className={className}>
-      El marcador es: {contador}
+      Puntación: {contador} puntos
     </div>
   )
 }

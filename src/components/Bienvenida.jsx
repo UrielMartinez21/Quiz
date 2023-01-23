@@ -3,20 +3,27 @@ import React from 'react'
 const Bienvenida = ({ setComenzar }) => {
   return (
     <>
-      <header className='py-60 text-center bg-amber-500 rounded'>
+      <header className='bg-yellow-500 h-96 p-48 text-center'>
         <h1 className='font-bold'>
-          Bienvenido al quiz de matematicas 1
+          Bienvenido al quiz
         </h1>
         <button
-          className='bg-red-500 uppercase rounded-full my-5'
+          className='bg-violet-800 uppercase rounded-full my-10 border-white border-2 p-4'
           onClick={() => setComenzar(true)}
           >
           Comenzar
         </button>
       </header>
-      <div>
-        Este es un cuestionario de matematicas de primer grado
-      </div>
+      <main className='text-center'>
+        <p>Este es un cuestionario de matematicas 1</p>
+        <p>Temario</p>
+        <ul>
+          <li>Sumas</li>
+          <li>Restas</li>
+          <li>Multiplicacion</li>
+          <li>Divisiones</li>
+        </ul>
+      </main>
     </>
   )
 }

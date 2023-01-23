@@ -7,7 +7,7 @@ const Preguntas = ({ setContador, contador }) => {
 
 //--------------------| Valor que regresara |--------------------
   return (
-    <div>
+    <>
       {preguntasCuestionario.map((pregunta) => ( 
         <Pregunta
           key={pregunta.id}
@@ -18,7 +18,7 @@ const Preguntas = ({ setContador, contador }) => {
           contador={contador}
         />
       ))}
-    </div>
+    </>
   )
 }
 

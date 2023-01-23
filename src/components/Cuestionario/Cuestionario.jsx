@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import BarraPrincipal from './BarraPrincipal'
-import Preguntas from './Cuestionario/Preguntas'
+import BarraPrincipal from '../Mostrador/BarraPrincipal'
+import Preguntas from './Preguntas'
 
 //---> Componente principal de preguntas
 const Cuestionario = ({ setComenzar }) => {
