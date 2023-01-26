@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import BarraPrincipal from '../Mostrador/BarraPrincipal'
 import Preguntas from './Preguntas'
 
 //---> Componente principal de preguntas
-const Cuestionario = ({ setComenzar }) => {
-  const [contador, setContador] = useState(0)
+const Cuestionario = ({ setComenzar, contador, setContador }) => {
 //--------------------| Valor que regresara |--------------------
   return (
     <>

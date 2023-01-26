@@ -4,14 +4,14 @@ import Cuestionario from './components/Cuestionario/Cuestionario'
 
 const App = () => {
   const [comenzar, setComenzar] = useState(false)
-
+  const [contador, setContador] = useState(0)
 //----------------------| Valor que regresara |----------------------
   return (
     <>
       {!comenzar ?
         <Bienvenida setComenzar={setComenzar} />
         :
-        <Cuestionario setComenzar={setComenzar} />
+        <Cuestionario setComenzar={setComenzar} contador={contador} setContador={setContador} />
       }
     </>
   )
